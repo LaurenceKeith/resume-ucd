@@ -65,6 +65,10 @@ header {
     margin: 0;
 }
 
+#nav li {
+    padding: 0;
+}
+
 .menuItem {
     height: 120px;
     text-align: center;
@@ -93,3 +97,7 @@ header {
     text-transform: uppercase;
 }
 
+/*------------------------------------hover */
+.hvr-sweep-to-bottom:before {
+    background-color: rgba(0,0,0,0.2);
+}
