@@ -19,7 +19,13 @@
 .ul-menu-color-download {
   background-color: #525252;  
 }
+
+.bg-color-three-reasons {
+    background-color: #ffffff;
+}
+
 /*-------------------- Special Paddings/Margins/Text ------------------*/
+
 h1
 h2,
 h3,
@@ -41,6 +47,22 @@ h4 {
     display: inline-block;
 }
 
+.section-column {
+    padding: 0 30px 30px;
+    float: none;
+    display: table-cell;
+}
+
+.row-table {
+    display: table;
+}
+
+.section-heading {
+    font-family: "Exo", sans-serif;
+    font-weight: 300;
+    margin-top: 25px;
+    margin-bottom: 40px;
+}
 
 /*-------------------- heading ------------------*/
 .heading {
@@ -174,5 +196,13 @@ footer .cv-pdf i:hover {
     margin: 20px;
 }
 
-/*xmlns.social-links li {    
-    margin-bottom: 10px;   /* lh */
+/*----------------------------- three reasons ----- */
+
+.three-reasons-icon {
+    font-size: 26px;
+    color: #e67e72;
+}
+
+.three-reasons-heading {
+    margin-bottom: 15px;
+}
