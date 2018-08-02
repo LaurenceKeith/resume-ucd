@@ -47,14 +47,6 @@ h4 {
     display: inline-block;
 }
 
-.section-column {
-    padding: 0 30px 30px;
-    /*float: none;            I removed this. Three Reasons section column was in-line with Personal Info section column for sizes xs & sm - 
-                              float: none was overriding the Bootstrap float: left for col-xs-12 & col-sm-12*/
-    display: table-cell;
-
-}
-
 .row-table {
     display: table;
 }
@@ -213,6 +205,37 @@ footer .cv-pdf i:hover {
 .three-reasons-heading {
     margin-bottom: 15px;
 }
+
+/*----------------------------- My Skills ----- */
+
+.progress {
+    position: relative;
+    height: 25px;
+}
+
+.progress-type {
+    position: absolute;
+    left: 0;
+    font-weight: 400;
+    padding: 3px 30px 2px 10px;
+    color: #fafafa;
+    background-color: rgba(25,25,25,0.2);
+}
+
+.progress-section {
+    margin: 40px 20px;
+}
+
+/*----------------------------- Media Queries ----- */
+@media(min-width:992px){  
+.section-column {
+    padding: 0 30px 30px;
+    float: none;            /* I had removed this. Three Reasons section column was in-line with Personal Info section column for sizes xs & sm - 
+                              float: none was overriding the Bootstrap float: left for col-xs-12 & col-sm-12*/
+    display: table-cell;
+
+}
+}
 @media(max-width:767px){           /* LH - xs only - when reasons are stacked */
 .three-reasons-row {
     margin-bottom: 8px;
@@ -223,4 +246,38 @@ footer .cv-pdf i:hover {
 
 .bg-color-personal-info {
     background-color: #f4f4f4;
+}
+
+.personal-info-item {
+    margin-bottom: 20px;
+    display: block;
+    clear: both;
+}
+
+.personal-info-item .key,
+.personal-info-item .value {
+    padding-right: 8px;
+    vertical-align: top;
+}
+
+.personal-info-item .key p,
+.personal-info-item .value p{
+    margin: 0;
+}
+
+.personal-info-item .key {
+    display: inline-block;
+    width: 30%;
+    margin-right: 21px;
+    padding-top: 2px;
+    
+}
+
+.personal-info-item .key p {
+    font-weight: 700;
+}
+.personal-info-item .value {
+    display: inline-block;
+    width: 60%;
+    position: relative;
 }
